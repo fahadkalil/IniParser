@@ -7,6 +7,8 @@ class IniParser(Parser):
     Gramática:
         https://github.com/prantlf/fast-ini/blob/master/doc/grammar.md
 
+        Itens em maiúsculas representam TOKENS
+
         <file> ::= <section_list>
         <section_list> ::= section_list section | section
         <section> ::= <SECTION_NAME> <entrylist>
