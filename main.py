@@ -6,18 +6,12 @@ if __name__ == '__main__':
 
     lexer = IniLexer()
     parser = IniParser()    
-
-    text = '''; last modified 1 April 2001 by John Doe
-[owner]
-name = John Doe
-organization = Acme Widgets Inc.
-
-[database]
-; use IP address in case network name resolution is not working
-server = 192.0.2.62     
-port = 143
-file = "payroll.dat"
-'''
+    
+    #
+    # testando o arquivo 'test_file.ini'
+    #
+    with open("test_file.ini", "r", encoding="utf-8") as file:
+        text = file.read() 
 
     debug_token_list = True
 
